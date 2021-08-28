@@ -6,6 +6,7 @@ import BarraNavegacion from "../components/BarraNavegacion/BarraNavegacion";
 import GetData from "../components/GetData/GetData";
 import Login from "../components/Login1/Login.jsx";
 import EditProperty from "../components/EditProperty/EditProperty";
+import Registro from "../components/Registrarse/Registro";
 
 export default function AppRouter() {
   return (
@@ -16,6 +17,7 @@ export default function AppRouter() {
         <Route exact path="/login" component={Login} />
         <Route exact path="/inmueble/:id" component={Inmueble} />
         <Route exact path="/editproperty/" component={EditProperty} />
+        <Route exact path="/registro" component={Registro} />
       </Switch>
     </Router>
   );

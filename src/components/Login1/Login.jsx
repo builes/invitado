@@ -135,11 +135,13 @@ export default function Login() {
         >
           Iniciar sesion
         </Button>
-      </div>
 
-      <Box mt={8}>
-        <Copyright />
-      </Box>
+        <Button fullWidth variant="contained" color="primary">
+          <Link href="registro" style={{ color: "white" }}>
+            Registrarse
+          </Link>
+        </Button>
+      </div>
     </Container>
   );
 }

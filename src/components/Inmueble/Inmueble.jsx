@@ -124,6 +124,10 @@ export default function Inmueble() {
     getPropiedades();
   }, []);
 
+  const iniciarSesion = () => {
+    alert("Debes iniciar sesion para acceder a esta opcion");
+  };
+
   return (
     <Grid container justify="center" className={classes.allText}>
       <Grid xs={12}>
@@ -152,32 +156,23 @@ export default function Inmueble() {
       </Grid>
       <Grid item xs={7} style={{ position: "relative" }}>
         <Card className={classes.cardAbsolute}>
-          <div>
-            {color ? (
-              <IconButton aria-label="add to favorites">
-                <FavoriteIcon
-                  id="favorite"
-                  style={{ fontSize: "40px", color: "#ffa726" }}
-                  onClick={() => setColor(!color)}
-                />
-              </IconButton>
-            ) : (
-              <IconButton aria-label="add to favorites">
-                <FavoriteIcon
-                  id="favorite"
-                  style={{ fontSize: "40px" }}
-                  onClick={() => setColor(!color)}
-                />
-              </IconButton>
-            )}
-          </div>
           <Button
             className={classes.cardInnerMargin}
             size="large"
             variant="contained"
             color="primary"
+            onClick={iniciarSesion}
           >
             Agendar visita
+          </Button>
+          <Button
+            className={classes.cardInnerMargin}
+            size="large"
+            variant="contained"
+            color="primary"
+            onClick={iniciarSesion}
+          >
+            Arrendar
           </Button>
         </Card>
         <Grid item xs={12}>
