@@ -116,6 +116,58 @@ export default function Registro() {
                 <MenuItem value={"No se permiten mascotas"}>Inquilino</MenuItem>
               </Select>
             </FormControl>
+            <FormControl
+              className={classes.formControl}
+              style={{ width: "100%" }}
+            >
+              <InputLabel id="demo-simple-select-label">
+                Tipo de documento
+              </InputLabel>
+              <Select labelId="demo-simple-select-label">
+                <MenuItem value={"Si se permiten mascotas"}>C.C</MenuItem>
+                <MenuItem value={"No se permiten mascotas"}>
+                  Cedula de extranjeria
+                </MenuItem>
+                <MenuItem value={"Si se permiten mascotas"}>Pasaporte</MenuItem>
+                <MenuItem value={"No se permiten mascotas"}>Nit</MenuItem>
+              </Select>
+            </FormControl>
+            <Grid item xs={12}>
+              <TextField
+                variant="outlined"
+                required
+                fullWidth
+                name="password"
+                label="Cedula"
+                type="number"
+                id="password"
+                autoComplete="current-password"
+              />
+            </Grid>
+            <Grid item xs={12}>
+              <TextField
+                variant="outlined"
+                required
+                fullWidth
+                name="password"
+                label="Telefono"
+                type="number"
+                id="password"
+                autoComplete="current-password"
+              />
+            </Grid>
+            <Grid item xs={12}>
+              <TextField
+                variant="outlined"
+                required
+                fullWidth
+                name="password"
+                label=""
+                type="date"
+                id="password"
+                autoComplete="current-password"
+              />
+            </Grid>
             <Grid item xs={12}>
               <TextField
                 variant="outlined"
@@ -123,7 +175,7 @@ export default function Registro() {
                 fullWidth
                 name="password"
                 label="Contraseña"
-                type="password"
+                type="number"
                 id="password"
                 autoComplete="current-password"
               />
